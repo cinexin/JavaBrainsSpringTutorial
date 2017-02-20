@@ -6,6 +6,8 @@
 .project
 .metadata
 bin/
+SpringAOP/target/
+SpringDataTutorial/target/
 tmp/
 *.tmp
 *.bak
@@ -15,6 +17,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
+
 
 # External tool builders
 .externalToolBuilders/
