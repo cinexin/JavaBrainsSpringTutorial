@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>SpringDataTutorial</groupId>
-  <artifactId>SpringDataTutorial</artifactId>
+  <groupId>org.migue.javabrains</groupId>
+  <artifactId>JdbcDemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 	<dependencies>
    		<dependency>
@@ -77,32 +77,19 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+		<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<version>1.2.1</version>
+			<configuration>
+				<mainClass>org.migue.javabrains.JdbcDemo</mainClass>
+			</configuration>
+		</plugin>
     </plugins>
+
+
+
   </build>
 
-	<profiles>
-		<profile>
-			<id>spring-data-tutorial</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>exec-maven-plugin</artifactId>
-						<version>1.1.1</version>
-						<executions>
-							<execution>
-								<phase>test</phase>
-								<goals>
-									<goal>java</goal>
-								</goals>
-								<configuration>
-									<mainClass>org.migue.javabrains.JdbcDemo</mainClass>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+
 </project>
